@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0d12;
+  color: white;
+}
+
+button {
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  border-bottom: 1px solid #242832;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.connect-button,
+.main-button {
+  border: none;
+  background: white;
+  color: #0b0d12;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dashboard {
+  width: 84%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 20px 60px;
+}
+
+.network {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 1px solid #343944;
+  border-radius: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin: 20px 0 10px;
+}
+
+.hero > p:not(.network) {
+  color: #9da3b0;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.main-button {
+  font-size: 16px;
+}
+
+.connected {
+  margin: 25px auto 0;
+  padding: 18px;
+  max-width: 500px;
+  background: #151922;
+  border: 1px solid #292e39;
+  border-radius: 12px;
+}
+
+.connected span {
+  font-weight: bold;
+}
+
+.connected p {
+  color: #9da3b0;
+  word-break: break-all;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 60px;
+}
+
+.card {
+  background: #151922;
+  border: 1px solid #292e39;
+  border-radius: 16px;
+  padding: 25px;
+  min-height: 170px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card strong {
+  display: block;
+  font-size: 30px;
+  margin: 20px 0 10px;
+}
+
+.card p {
+  color: #9da3b0;
+}
+
+.card button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+}
